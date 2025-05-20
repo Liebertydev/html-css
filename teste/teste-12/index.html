@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de tags</title>
+</head>
+<body>
+    <h1><em>Testando as tags</em></h1>
+    <ul type="disc">
+        <li>
+            <p>Estou testando a tag <strong>&lt;picture&gt;</strong></p>
+            <picture>
+                <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+                <img src="imagens/imagem-g.png" alt="imagem responsiva">
+            </picture>
+        </li>
+        <li>
+            <p>Estou testando a tag <strong>&lt;audio&gt;</strong></p>
+            <audio controls preload="metadata" loop muted>
+                <source src="audio/happy-mistake.mp3" type="audio/mpeg">
+                <p>seu navegador não é compatível com reprodução de audios. caso queira baixar o arquivo <a href="audio/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg">clique aqui</a></p>
+            </audio>
+        </li>
+        <li>
+            <p>Estou testando a tag <strong>&lt;video&gt;</strong></p>
+            <video controls preload="metadata" loop width="700px">
+                <source src="videos/meu-video.mp4" type="video/mp4">
+                <source src="videos/meu-video.mkv" type="video/x-matroska">
+                <source src="videos/meu-video.ogv" type="video/ogg">
+                <source src="videos/meu-video.webm" type="video/webm">
+                <p>seu navegador não é compatível com a reprodução de videos. Caso queira baixar o arquivo, <a href="videos/meu-video.mp4" download="meu-video.mp4" type="video/mp4">clique aqui</a></p>
+            </video>
+        </li>
+    </ul>
+    <p><mark style="background-color: aqua;">Entre em contato conosco:</mark></p>
+    <ul type="disc">
+        <li><address>81996073807</address></li>
+        <li><address>@liebertyholanda</address></li>
+        <li><address>Rua são Sebastião N° 308</address></li>
+    </ul>
+</body>
+</html>

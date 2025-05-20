@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+div {
+    border: 3px solid red;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    text-align: center;
+    margin: 190px 20px 90px 70px;
+}
+
+div > p {
+    display: none;
+}
+
+
+
+.sobrepor:hover > p {
+    display: block;
+    background-color: lightseagreen;
+    color: red;
+    font-weight: bolder;
+    
+}

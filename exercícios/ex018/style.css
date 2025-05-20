@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@font-face {
+    font-family: 'Hallowen';
+    src: url('fonts/Witch Magic.otf') format('Opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1, h2 {
+    font-family: 'Hallowen', arial, sans-serif;
+    font-size: 3em;
+}
+
+p {
+    font-family: 'Roboto Serif, Arial, Helvetica, sans serif';
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+main {
+    width: 600px;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 2%;
+    margin: 50px auto;
+    height: 500px;
+    background-color: bisque;
+    padding: 15px;
+}
+
+body {
+    background-color: aliceblue;
+}

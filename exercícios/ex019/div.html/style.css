@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.cartão {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: aqua;
+}
+
+h1 {
+    color: #000;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    color: white;
+    background-color: red;
+    margin: auto;
+    width: 300px;
+
+}
+
+.tabela {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 180px 80px 80px 180px;
+
+}
+
+.tabela:hover {
+    background-color: aqua;
+    color: blue;
+}

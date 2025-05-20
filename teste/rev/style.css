@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@font-face {
+    font-family: 'Bruxa';
+    src: url('fonts/Bruxa.otf') format('opentype');
+}
+
+
+h1 {
+    font-family: 'Bruxa', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+    font-style: italic;
+}
+#font1 {
+    font-family: 'Cinzel', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+        
+
+#font2 {
+    font-family: 'Grenze Gotisch', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
