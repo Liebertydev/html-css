@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout de blog</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 300;
+      color: #444;
+      width: 100vw;
+    }
+
+    img {
+      width: 95%;
+    }
+
+    div#content {
+      padding: 1rem;
+      width: 100%; /* Centraliza o conteúdo em telas grandes */
+    }
+
+    .post {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #ccc;
+      padding: .7rem;
+    }
+
+    .post-title {
+      font-size: 1.6rem;
+      font-weight: normal;
+      margin-bottom: .7rem;
+    }
+
+    .post-title a {
+      text-decoration: none;
+      color: indigo;
+    }
+
+    .autoria a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #444;
+    }
+
+    .autoria a:hover,
+    .post-title a:hover {
+      text-decoration: underline;
+    }
+
+    .autoria {
+      margin-bottom: .7rem;
+      font-size: .8rem;
+    }
+
+    .post-thumb {
+      margin-bottom: .7rem;
+      display: block;
+    }
+
+    .text-content {
+      line-height: 1.5rem;
+      text-align: justify;
+      max-width: 95%;
+      font-size: 16px;
+      padding-left: 0;
+    }
+
+    .leia-mais {
+      font-weight: bold;
+      color: indigo;
+      padding-left: .5rem;
+      text-decoration: none;
+    }
+
+    .leia-mais:hover {
+      text-decoration: underline;
+    }
+
+    /* Tablet pequeno: começa a aumentar o content */
+    @media (min-width: 768px) {
+      div#content {
+        width: 100%;
+      }
+
+      .text-content {
+        font-size: 20px;
+      }
+    }
+
+    /* Tablet grande: aumenta mais um pouco */
+    @media (min-width: 960px) {
+      div#content {
+        width: 100%;
+      }
+
+        .post-thumb {
+            width: 90%;
+        }
+
+      .text-content {
+        font-size: 19px;
+        width: 90%;
+      }
+    }
+
+    /* A partir de 1100px: ativa layout com imagem + texto lado a lado */
+    @media (min-width: 1100px) {
+      div#content {
+        width: 75%;
+      }
+
+      .post {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      header,
+      .autoria {
+        flex: 1 0 100%;
+      }
+
+      .post-image {
+        flex-basis: 40%;
+        min-width: 265px;
+      }
+
+      .text-content {
+        flex-basis: 60%;
+        padding-left: 10px;
+        font-size: 16px;
+      }
+    }
+
+    /* Telas muito grandes (4K, ultra-wide...) */
+    @media (min-width: 1539px) {
+      div#content {
+        width: 70%;
+      }
+
+      .text-content {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <article class="post">
+      <header>
+        <h2 class="post-title"><a href="#" rel="author">Por onde eu começo a aprender a criar sites?</a></h2>
+      </header>
+      <div class="autoria">
+        <span class="autor">Por <a href="#">Ed Francisco</a> | </span>
+        <span class="data">10 de Outubro de 2018</span>
+      </div>
+      <a href="#" class="post-image">
+        <img class="post-thumb" src="https://s1.static.brasilescola.uol.com.br/be/vestibular/cb646017da9cc349be6d670ad4f299fd.jpg" alt="Imagem de menino estudando">
+      </a>
+      <div class="text-content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ab veritatis ipsam itaque eaque. Laboriosam ipsam, voluptatem a minima alias rerum recusandae, sapiente pariatur, magnam voluptas odio ipsa cupiditate ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem ispum dor manatcyhe iiehub nksdn lorem impsu. lorem impsum doir lorem ipsum doir lorem imspidsm lorem ipsum foir lorem ispuinmsd foirm lorem impsin doimr. lorem ipsum dior lorem loirem usouun doit lorem. <a href="#" class="leia-mais">Leia mais &raquo;</a></p>
+      </div>
+    </article>
+
+    <article class="post">
+      <header>
+        <h2 class="post-title"><a href="#" rel="author">Por onde eu começo a aprender a criar sites?</a></h2>
+      </header>
+      <div class="autoria">
+        <span class="autor">Por <a href="#">Ed Francisco</a> | </span>
+        <span class="data">10 de Outubro de 2018</span>
+      </div>
+      <a href="#" class="post-image">
+        <img class="post-thumb" src="https://s1.static.brasilescola.uol.com.br/be/vestibular/cb646017da9cc349be6d670ad4f299fd.jpg" alt="Imagem de menino estudando">
+      </a>
+      <div class="text-content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ab veritatis ipsam itaque eaque. Laboriosam ipsam, voluptatem a minima alias rerum recusandae, sapiente pariatur, magnam voluptas odio ipsa cupiditate ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem ispum dor manatcyhe iiehub nksdn lorem impsu. lorem impsum doir lorem ipsum doir lorem imspidsm lorem ipsum foir lorem ispuinmsd foirm lorem impsin doimr. lorem ipsum dior lorem loirem usouun doit lorem. <a href="#" class="leia-mais">Leia mais &raquo;</a></p>
+      </div>
+    </article>
+
+    <article class="post">
+      <header>
+        <h2 class="post-title"><a href="#" rel="author">Por onde eu começo a aprender a criar sites?</a></h2>
+      </header>
+      <div class="autoria">
+        <span class="autor">Por <a href="#">Ed Francisco</a> | </span>
+        <span class="data">10 de Outubro de 2018</span>
+      </div>
+      <a href="#" class="post-image">
+        <img class="post-thumb" src="https://s1.static.brasilescola.uol.com.br/be/vestibular/cb646017da9cc349be6d670ad4f299fd.jpg" alt="Imagem de menino estudando">
+      </a>
+      <div class="text-content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ab veritatis ipsam itaque eaque. Laboriosam ipsam, voluptatem a minima alias rerum recusandae, sapiente pariatur, magnam voluptas odio ipsa cupiditate ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem ispum dor manatcyhe iiehub nksdn lorem impsu. lorem impsum doir lorem ipsum doir lorem imspidsm lorem ipsum foir lorem ispuinmsd foirm lorem impsin doimr. lorem ipsum dior lorem loirem usouun doit lorem. <a href="#" class="leia-mais">Leia mais &raquo;</a></p>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
